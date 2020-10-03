@@ -1,0 +1,450 @@
+/* FONTS
+
+    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Armata', sans-serif;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Monoton', cursive; 
+    font-family: 'Baloo 2', cursive;
+    font-family: 'Cormorant SC', serif;
+    font-family: 'Ubuntu', sans-serif;
+
+*/
+
+
+
+
+* {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* cursor: none; */
+    transition: all .2s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#nav-bar {
+    margin: 0;
+    position: fixed;
+    text-decoration: none;
+    z-index: 1;
+}
+
+#nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#nav-bar ul li {
+    float: left;
+    padding: 20px 30px 0px;
+}
+
+#nav-bar ul li a {
+    display: block;
+    color: rgb(216, 216, 216);
+    text-align: center;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-family: 'Julius Sans One', sans-serif;
+    letter-spacing: 2px;
+    background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) center bottom; /*OR bottom right OR bottom left*/
+    background-size: 0% 2px;
+    background-repeat:no-repeat; 
+    transition: all 0.45s;
+}
+
+#nav-bar ul li a:hover {
+    color: white;
+    background-size: 100% 2px;
+}
+
+#container {
+    background-color: black;
+}
+
+#bg-image {
+    height: 100vh;
+    background-image: url("../images/top1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    opacity: 0.65;
+    filter: blur(5px) sepia(30%);
+}
+
+#hero-img {
+    float: left;
+    padding: 5px;
+}
+
+#hero-img img {
+    height: 250px;
+    width: auto;
+    border-radius: 50%;
+    border: 5px white;
+    border-style: double;
+    padding: 3px;
+}
+
+#text-box {
+    padding: 30px 25px;
+    width: 75%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px white;
+    border-style: groove;
+}
+
+#text-box fieldset {
+    padding: 20px;
+}
+
+#hero-subtitle {
+    font-family: 'Baloo 2', cursive;
+    font-size: 25px;
+    padding-top: 5%;
+}
+
+#hero-name {
+    font-family: 'Audiowide', cursive;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    padding-bottom: 10px;
+}
+
+#hero-paragraph {
+    font-family: 'Baloo 2', cursive;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+#social {
+    color: whitesmoke;
+    padding-right: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#social a img {
+    filter: invert(50%);
+    height: 40px;
+    width: 40px;
+    margin: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    padding: 4px;
+}
+
+#social a img:hover {
+    border: black solid 2px;
+    border-radius: 10px;
+    filter: invert(100%);
+}
+
+#projects {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    z-index: 0;
+}
+
+#projects::before {
+    content: "";
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;height: 100vh;
+    background-image: url("../images/top4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(5px) sepia(30%);
+    opacity: 0.65;
+    z-index: 0;
+}
+
+#projects-container {
+    position: relative;
+    color: white;
+}
+
+#projects-container h1 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 70px;
+    padding: 7% 0px 30px 20px;
+}
+
+.projects {
+    position: absolute;
+    margin-top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: whitesmoke solid 3px;
+    border-radius: 10px;
+    border-style: groove;
+    padding: 30px;
+    width: 70%;
+    align-items: center;
+}
+
+.projects h3 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.projects p {
+    font-family: 'Baloo 2', cursive;
+    font-size: 22px;
+}
+
+#about {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    z-index: 0;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;height: 100vh;
+    background-image: url("../images/top3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(5px) sepia(30%);
+    opacity: 0.65;
+    z-index: 0;
+}
+
+#about-container {
+    position: relative;
+    color: white;
+}
+
+#about-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about-container h1 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 70px;
+    padding: 7% 0px 30px 20px;
+}
+
+.skills > h4 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 50px;
+    padding: 0px 0px 20px 40px;
+}
+
+.skills {
+    min-width: 50%;
+}
+
+.skills h3 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 25px;
+    padding: 30px;
+}
+
+.skills img {
+    height: 50px;
+    width: auto;
+    padding-left: 3%;
+}
+
+#right-div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#photo-grid h3 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 50px;
+    padding: 30px;
+}
+
+#photo-grid /* :nth-child(n+2) */ {
+    margin: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* PHOTO GRID IN ABOUT SECTION */
+#photo-grid img {
+    padding: 2px;
+    height: 100px;
+    width: auto;
+}
+
+
+/* END OF PHOTO GRID */
+
+.my-resume {
+    margin: 5px;
+}
+
+.my-resume h3 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 50px;
+    padding: 40px 0px 40px 0px;
+}
+
+.my-resume input {
+    margin: 10px 0px 0px 30%;
+    background-color: transparent;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.my-resume input:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.contact {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 20px;
+}
+
+#contact-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact h3 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 50px;
+    padding: 30px;
+}
+
+.contact h4 {
+    display: inline-block;
+    color: whitesmoke;
+}
+
+.contact img {
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    filter: invert(80%);
+    padding: 10px;
+}
+
+#contact-flex  a {
+    color: rgba(184, 183, 183, 0.685);
+    text-decoration: none;
+}
+
+#contact-flex a:hover {
+    color: white;
+}
+
+.contact img:hover {
+    filter: invert(100%);
+    color: white;
+}
+
+#contact-mail {
+    align-self: flex-start;
+    padding-left: 20px;
+}
+
+#contact-github {
+    align-self: center;
+}
+
+#contact-social {
+    align-self: flex-end;
+    padding-right: 20px;
+}
+/* CURSOR BEGINNING*/
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+}
+
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+
+
+/* CURSOR END */
+

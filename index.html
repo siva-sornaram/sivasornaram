@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&family=Armata&family=Audiowide&family=Julius+Sans+One&family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Cormorant+SC:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Siva's Portfolio</title>
+</head>
+<body>
+    <!-- <div class="cursor"></div> -->
+    <div id="nav-bar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+    <div id="home">
+        <section id="container">
+            <div id="bg-image"></div>
+            <div id="text-box">
+                <div id="hero-img">
+                    <img src="./images/hero.jpg" alt="hero_image.jpg">
+                </div>
+                <fieldset>
+                    <div id="hero-subtitle">Full Stack Web Developer</div>
+                    <h1 id="hero-name">Siva Sornaram</h1>
+                    <p id="hero-paragraph">Hi! Welcome to my Portfolio. I'm a BE graduate in Electical and Electronics Engineering passionated on &#60/Software Development&#62</p>
+                </fieldset>
+            </div>
+            <div id="social">
+                <a href="https://www.github.com/siva7vicky/"><img src="./images/GitHub-Mark-120px-plus.png"></a>
+                <a href="https://www.linkedin.com/in/sivasornaram/"><img src="./images/in.png" alt="linkedin-logo.png"></a>
+                <a href="https://www.instagram.com/siva_sornaram/"><img src="./images/insta.png" alt="instagram-logo.png"></a>
+                <a href="https://www.facebook.com/Rocky7Vicky"><img src="./images/fb.png" alt="facebook-logo.png"></a>
+            </div>
+        </section>
+    </div> 
+    
+    <div id="projects">
+        <section id="projects-container">
+            <h1>Projects</h1>
+            <div class="projects">
+                <h3 class="project-1">SMART VEHICLE MONITORING SYSTEM USING RASPBERRY PI & OPENCV</h3>
+                <p class="project-1">A Real time vehicle monitoring system that continuously looks for vehicle’s number plates and collects the real time data as whether it’s a residential vehicle or visitor vehicle. It’s a fully automated system that uses a raspberry pi, camera and OpenCV.</p>
+                <h3 class="project-2">SMART SECURITY MONITORING USING RASPBERRY PI & PYTHON </h3>
+                <p class="project-2">It’s a security monitoring system. It just detects any human interface using the camera and sends an email to the specified email address using Raspberry PI and a PI Camera using a package called OpenCV, a python package for image processing.</p>
+                <h3 class="project-3">SPEED REGULATION OF CEILING FAN USING IOT</h3>
+                <p class="project-3">This Project is about fully automated ceiling fan control using IoT. The PWN signals are sent to the adafruit MQTT Broker from Google Assistant via IFTTT. The NodeMCU receive the PWN signals via WiFi and the circuit attached to the NodeMCU regulates the AC voltage and controls the fan speed.</p>
+            </div>
+            <!-- 
+                SMART VEHICLE MONITORING SYSTEM USING RASPBERRY PI & OPENCV
+                A Real time vehicle monitoring system that continuously looks for vehicle’s number plates and collects the real time data as whether it’s a residential vehicle or visitor vehicle. It’s a fully automated system that uses a raspberry pi, camera and OpenCV.
+                SMART SECURITY MONITORING USING RASPBERRY PI & PYTHON 
+                It’s a security monitoring system. It just detects any human interface using the camera and sends an email to the specified email address using Raspberry PI and a PI Camera using a package called OpenCV, a python package for image processing.
+                SPEED REGULATION OF CEILING FAN USING IOT
+                This Project is about fully automated ceiling fan control using IoT. The PWN signals are sent to the adafruit MQTT Broker from Google Assistant via IFTTT. The NodeMCU receive the PWN signals via WiFi and the circuit attached to the NodeMCU regulates the AC voltage and controls the fan speed.
+            -->
+        </section>
+    </div>
+
+    <div id="about">
+        <section id="about-container">
+            <h1>About</h1>
+            <div id="about-flex">
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <h3>// Languages Known</h3>
+                    <img src="./images/c++.png" title="c++ programming language" alt="c++.png">
+                    <img src="./images/java.png" title="Java programming language" alt="java.png">
+                    <img src="./images/python.png" title="Python programming language" alt="python.png">
+                    <h3>// Web Development</h3>
+                    <img src="./images/font-end.png" title="HTML 5, CSS 3, JavaScript" alt="html.png, css.png, js.png">
+                    <img src="./images/java servlet.png" title="Java Servlets" alt="java servlet.png">
+                    <h3>// Cyber Security & Other tools and IDE's</h3>
+                    <img src="./images/cyber.png" title="Cyber Security" alt="cyber security.png">
+                    <img src="./images/Virtualbox_logo.png" title="VirtualBox" alt="Virtualbox_logo.png">
+                    <img src="./images/arduino.png" title="Arduino IDE" alt="arduino.png">
+                    <img src="./images/rasp.png" title="Raspberry PI" alt="raspberry.png">
+                </div>
+                <div id="right-div">
+                    <div id="photo-grid">
+                        <!-- <h3>My Contributions </h3> -->
+                        <img src="./images/photo stack/1.jpeg">
+                        <img src="./images/photo stack/2.jpg">
+                        <img src="./images/photo stack/3.JPG">
+                        <img src="./images/photo stack/4.JPG">
+                        <img src="./images/photo stack/5.JPG">
+                        <img src="./images/photo stack/6.JPG">
+                        <img src="./images/photo stack/7.JPG">
+                        <img src="./images/photo stack/8.JPG">
+                        <img src="./images/photo stack/9.jpg">
+                    </div>
+                    <div class="my-resume">
+                        <h3>My Resume</h3>
+                        <input type=submit value="View My Resume " onclick="window.open('./images/resume1.pdf'); return true;" target=__blank>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <embed src="./images/resume1.pdf" type="application/pdf" width="100%" height="600px" /> -->
+            <div class="contact">
+                <h3>Contact Me</h3>
+                <div id="contact-flex">
+                    <div id="contact-mail"><h4>Drop a mail at -->     </h4><a href="mailto:mailmeatvignesh7@gmail.com"><img src="./images/gmail.png" alt="gmail.png">mailmeatvignesh7@gmail.com</a></div>
+                    <div id="contact-github"><a href="https://www.github.com/siva7vicky/">Browse my GitHub <img src="./images/GitHub-Mark-120px-plus.png"></a></div>
+                    <div id="contact-social"><h4>Do follow me on --> </h4><a href="https://www.linkedin.com/in/sivasornaram/"><img src="./images/in.png" alt="linkedin-logo.png"></a><a href="https://www.instagram.com/siva_sornaram/"><img src="./images/insta.png" alt="instagram-logo.png"></a><a href="https://www.facebook.com/Rocky7Vicky"><img src="./images/fb.png" alt="facebook-logo.png"></a></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
