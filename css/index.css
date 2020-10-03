@@ -20,12 +20,11 @@
     padding: 0;
     border: 0;
     /* cursor: none; */
-    transition: all .2s ease-in-out;
 }
 
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 #nav-bar {
     margin: 0;
@@ -151,6 +150,7 @@ html {
     border: black solid 2px;
     border-radius: 10px;
     filter: invert(100%);
+    transition: ease-in-out .3s;
 }
 
 #projects {
